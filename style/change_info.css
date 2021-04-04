@@ -1,0 +1,36 @@
+.change_info {
+}
+.change_info form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+
+  margin-top: 35px;
+  background-color: #9c27b0;
+}
+.change_info form input {
+  width: 80%;
+  margin: auto;
+  border: none;
+  background: none;
+  color: white;
+  height: 34px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  padding-left: 20px;
+}
+.change_info form #submit {
+  background-color: crimson;
+  margin-bottom: 15px;
+  border: none;
+  transition: all 0.3s;
+  padding-left: 0;
+}
+.change_info form #submit:hover {
+  padding-left: 20px;
+}
+.change_info form #submit:active {
+  background-color: white;
+}

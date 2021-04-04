@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: aliceblue; */
+}
+/* .enregistrer {
+} */
+/* add developer style */
+.enregistrer form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: crimson;
+  margin-top: 100px;
+}
+.enregistrer form input {
+  width: 80%;
+  height: 34px;
+  margin-top: 19px;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 4px solid;
+  background: none;
+  color: white;
+  font-size: 16px;
+}
+
+
+/* .enregistrer form input:hover {
+} */
+.enregistrer form #submit {
+  margin-bottom: 20px;
+  border: none;
+  background-color: cadetblue;
+  font-size: 16px;
+  padding-top: 0px;
+  padding-left: 0px;
+  transition: all .3s;
+}
+.enregistrer form #submit:hover {
+    padding-left: 30px;
+}
+.enregistrer form #submit:active{
+    background-color: white;
+}
+/* end developer style */

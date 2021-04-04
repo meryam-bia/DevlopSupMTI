@@ -1,0 +1,42 @@
+.show_dev {
+  margin-top: 30px;
+}
+.show_dev form {
+}
+.show_dev form table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+.show_dev form table #table_header {
+  background-color: #ffc3c3;
+}
+.show_dev form table #table_header th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9c27b0;
+  color: white;
+
+}
+.show_dev form table tr td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.show_dev .submit {
+  border: none;
+  background-color: crimson;
+  margin-top: 5px;
+  color: white;
+  width: 100px;
+  transition: all .3s;
+}
+.show_dev .submit:hover{
+    padding-left: 20px;
+}
+.show_dev .submit:active{
+    background-color: white;
+}

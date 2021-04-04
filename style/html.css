@@ -1,0 +1,25 @@
+.htmlDev {
+    margin-top: 30px;
+}
+.htmlDev table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+.htmlDev table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.htmlDev table tr th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9c27b0;
+  color: white;
+}
+.htmlDev table tr td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

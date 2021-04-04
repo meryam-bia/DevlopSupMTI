@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.login {
+  margin-top: 100px;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  margin: auto;
+  background-color: crimson;
+}
+.login form input {
+  width: 80%;
+  margin: auto;
+  height: 34px;
+  margin-top: 14px;
+  padding-left: 20px;
+  background-color: crimson;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-bottom: 4px solid white;
+}
+.login form #submit {
+  background-color: cadetblue;
+  border: none;
+  margin-bottom: 22px;
+  padding-left: 0;
+  transition: all 0.3s;
+}
+.login form #submit:hover {
+  padding-left: 20px;
+}
+.login form #submit:active {
+  background-color: white;
+}
+/* msg style */
+.msg {
+  text-align: center;
+  margin-top: 20px;
+  color: red;
+}

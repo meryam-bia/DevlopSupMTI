@@ -1,0 +1,36 @@
+.enregistrer {
+}
+.enregistrer form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: auto;
+
+  margin-top: 35px;
+  background-color: #9c27b0;
+}
+.enregistrer form input {
+    width: 80%;
+    margin: auto;
+    border: none;
+    background: none;
+    color: white;
+    height: 34px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-bottom:3px solid white ;
+    padding-left: 20px;
+}
+.enregistrer form  #submit{
+    background-color: crimson;
+    margin-bottom: 15px;
+    border: none;
+    transition: all .3s;
+    padding-left: 0;
+}
+.enregistrer form  #submit:hover{
+    padding-left: 20px;
+}
+.enregistrer form  #submit:active{
+    background-color: white;
+}

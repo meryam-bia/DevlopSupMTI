@@ -1,0 +1,65 @@
+.addtechno {
+}
+.addtechno form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+
+  margin-top: 35px;
+  background-color: #9c27b0;
+}
+.addtechno form input {
+  width: 80%;
+  margin: auto;
+  border: none;
+  background: none;
+  color: white;
+  height: 34px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  padding-left: 20px;
+}
+.addtechno form select {
+  background-color: #9c27b0;
+  border: none;
+
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding-top: 11px;
+  border-bottom: 3px solid;
+}
+.addtechno form select option {
+}
+.addtechno form #submit {
+  background-color: crimson;
+  margin-bottom: 15px;
+  border: none;
+  transition: all 0.3s;
+  padding-left: 0;
+}
+.addtechno form #submit:hover {
+  padding-left: 20px;
+}
+.addtechno form #submit:active {
+  background-color: white;
+}
+/* table style */
+.devTabel{
+    margin-top: 30px;
+}
+.devTabel table{
+    border: 2px solid #9c27b0;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+  
+}
+.devTabel table tr{
+    background-color: #ffc3c3;
+
+}
+.devTabel table tr:nth-child(even){background-color: #f2f2f2;}
+.devTabel table tr td{}
