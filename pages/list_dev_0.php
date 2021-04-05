@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style/list0.css">
 <div class="list_dev_0">
     <table>
         <tr>

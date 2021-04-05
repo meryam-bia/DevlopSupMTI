@@ -2,7 +2,7 @@
 // select developer
 class get_1
 {
-    public $rst ;
+    public $rst;
     public function __construct()
 
     {
@@ -23,10 +23,8 @@ class get_1
 
             $r = $conn->query($adduser_str);
             $this->rst = $r;
-            
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
     }
-
 }

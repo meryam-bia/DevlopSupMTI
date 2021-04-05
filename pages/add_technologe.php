@@ -6,11 +6,12 @@
             <?php
             include "method/select_dev_nom.php";
             $selct_dv_nom = new slsct_dev();
-            foreach ($selct_dv_nom->rst as $a) {
-                // var_dump($a);
-                echo "<option value='" . $a["id"] . "'>" . $a["nom"] . "</option>";
-            }
             ?>
+
+            <?php foreach ($selct_dv_nom->rst as $a) { ?>
+                <option value="<?php echo $a["id"] ?>"><?php echo $a["nom"] ?></option>
+            <?php } ?>
+
         </select>
         <!-- <input type="text" name="developer" id="developer" placeholder="developer"> -->
         <input type="text" name="html" id="html" placeholder="html">

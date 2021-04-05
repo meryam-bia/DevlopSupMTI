@@ -20,12 +20,11 @@ try {
     // var_dump($prenom_list->fetch());
     // echo $nom_list->rowCount();
     // echo $prenom_list->rowCount();
-    if($nom_list->rowCount()>0 && $prenom_list->rowCount()>0){
-        foreach($nom_list->fetchAll() as $a=>$b){
-            echo $b["nom"] ;
+    if ($nom_list->rowCount() > 0 && $prenom_list->rowCount() > 0) {
+        foreach ($nom_list->fetchAll() as $a => $b) {
+            echo $b["nom"];
         }
     }
-
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

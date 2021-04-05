@@ -31,7 +31,7 @@ try {
             <?php
             if ($all_list->rowCount() > 0) {
                 foreach ($all_list->fetchAll() as $a) {
-                    echo "<tr>" . "<td>" . $a["nom"] . "</td>" . "<td>" . $a["prenom"] . "</td>" . "<td> <button  value = '".$a['id']."' name='submit' class='submit'>DELET</button>  </td>" . "</tr>";
+                    echo "<tr>" . "<td>" . $a["nom"] . "</td>" . "<td>" . $a["prenom"] . "</td>" . "<td> <button  value = '" . $a['id'] . "' name='submit' class='submit'>DELET</button>  </td>" . "</tr>";
                 }
             }
             ?>
@@ -40,15 +40,12 @@ try {
 
         </table>
     </form>
-    </div>
-    <?php
-    if(isset($_POST["submit"])){
-        $id_s = $_POST["submit"];
-        include "method/delet_user.php";
-        $delet = new deletdev($id_s);
-        echo '<meta http-equiv="refresh" content="0">';
-        
-
-    }
-    ?>
-
+</div>
+<?php
+if (isset($_POST["submit"])) {
+    $id_s = $_POST["submit"];
+    include "method/delet_user.php";
+    $delet = new deletdev($id_s);
+    echo '<meta http-equiv="refresh" content="0">';
+}
+?>

@@ -2,7 +2,7 @@
 // select developer
 class slsct_dev_nom
 {
-    public $rst ;
+    public $rst;
     public function __construct()
 
     {
@@ -23,12 +23,8 @@ class slsct_dev_nom
 
             $r = $conn->query($adduser_str);
             $this->rst = $r->fetchAll();
-            
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
     }
-
-
-
 }
