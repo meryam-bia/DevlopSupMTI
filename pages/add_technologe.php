@@ -23,22 +23,7 @@
     </form>
 
 </div>
-<?php
-if (isset($_POST["submit"])) {
-    if (isset($_POST["developer"]) && isset($_POST["html"]) && isset($_POST["php"]) && isset($_POST["ajax"]) && isset($_POST["js"]) && isset($_POST["cgi"])) {
-        $dev_id = $_POST["developer"];
-        $html = $_POST["html"];
-        $php = $_POST["php"];
-        $js = $_POST["js"];
-        $ajax = $_POST["ajax"];
-        $cgi = $_POST["cgi"];
 
-        include "method/add_techno.php";
-        $addtechno = new addtech($html, $php, $js, $ajax, $cgi, $dev_id);
-        echo '<meta http-equiv="refresh" content="0">';
-    }
-}
-?>
 <div class="devTabel">
     <Table>
         <tr>
@@ -62,3 +47,23 @@ if (isset($_POST["submit"])) {
         ?>
     </Table>
 </div>
+<?php
+if (isset($_POST["submit"])) {
+    if (isset($_POST["developer"]) && isset($_POST["html"]) && isset($_POST["php"]) && isset($_POST["ajax"]) && isset($_POST["js"]) && isset($_POST["cgi"])) {
+        $dev_id = $_POST["developer"];
+        $html = $_POST["html"];
+        $php = $_POST["php"];
+        $js = $_POST["js"];
+        $ajax = $_POST["ajax"];
+        $cgi = $_POST["cgi"];
+
+        include "method/add_techno.php";
+        if ($dev_id == $a["dev_id"]) {
+           
+        }else{
+            $addtechno = new addtech($html, $php, $js, $ajax, $cgi, $dev_id);
+            echo '<meta http-equiv="refresh" content="0">';
+        }
+    }
+}
+?>

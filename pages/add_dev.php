@@ -24,10 +24,35 @@ if (isset($_POST["submit"])) {
         // check input value
         // connect db
         // add devloper to db 
+
+        // var_dump();
         include "/wamp64/www/DevlopSupMTI/method/addDevloper.php";
-        $addDev = new addnewdev($nom, $prenom, $email);
-        echo '<meta http-equiv="refresh" content="0">';
+
+        include "method/select_dev.php";
+        $get_email = new slsct_dev_email();
+        $email_d =  $get_email->rst;
+        $val = true;
+        foreach ($email_d as $a) {
+            var_dump($a["email"]);
+
+            if ($a["email"] == $email) {
+                $val = false;
+            }
+        }
+        if ($val) {
+            $addDev = new addnewdev($nom, $prenom, $email);
+            echo '<meta http-equiv="refresh" content="0">';
+        }
     }
 }
 
+?>
+
+<?php
+// include "method/select_dev.php";
+// $get_email = new slsct_dev_email();
+// $email_d =  $get_email->rst;
+// foreach ($email_d as $a) {
+//     var_dump($a["email"]);
+// }
 ?>
