@@ -35,17 +35,24 @@ session_start();
             }
             $emil = test_input($_POST["email"]);
             $password = test_input($_POST["password"]);
+
+            // $pss = password_hash($password, PASSWORD_DEFAULT);
+
             include "/wamp64/www/DevlopSupMTI/method/f_user.php";
+
             $f_user = new finde_user($emil, $password);
+
+            // var_dump($f_user->reslt->fetchAll());
+            // echo $pss;
         }
     }
     ?>
 
     <p class="msg"><?php
-        if (isset($f_user)) {
-            echo $f_user->errorMsg;
-        }
-        ?></p>
+                    if (isset($f_user)) {
+                        echo $f_user->errorMsg;
+                    }
+                    ?></p>
 </body>
 
 </html>

@@ -2,6 +2,16 @@
 // Start the session
 session_start();
 // $nom = 
+// $id  = $_SESSION["user_info"]["id"];
+// var_dump($_SESSION);
+if ($_SESSION == null) {
+  // echo "okk";
+  // header('Location : /login.php');
+}
+
+// if(){
+//   // header("Location : login.php");
+// }
 ?>
 <!doctype html>
 <html lang="en">
@@ -83,14 +93,14 @@ session_start();
           <li class="nav-item active  ">
             <a class="nav-link" id="list_1">
               <i class="material-icons">reorder</i>
-              <p>list de developer -1</p>
+              <p>list de développeurs<br> dont un niveau inconnue</p>
             </a>
           </li>
           <!-- list de developer 0 -->
           <li class="nav-item active  ">
             <a class="nav-link" id="list_0">
               <i class="material-icons">segment</i>
-              <p>list de developer 0</p>
+              <p>list de développeurs<br> dont un niveau <br>au moins est insuffisant</p>
             </a>
           </li>
           <!--  -->
@@ -148,7 +158,7 @@ session_start();
               </div>
               <div class="card_info">
                 <div class="info">
-                  <p>nomber des expert</p>
+                  <p>nomber des expert en html</p>
                   <p>
                     <?php
                     include "method/nomb_exp.php";
@@ -180,7 +190,8 @@ session_start();
               </div>
               <div class="card_info">
                 <div class="info">
-                  <p>expert mult</p>
+                  <p>dév
+                    dont un niveau inconnue</p>
                   <p><?php
                       include "method/nomb_mut.php";
                       $test4 = new nomb_mut();

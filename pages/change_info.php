@@ -2,6 +2,7 @@
 // Start the session
 // session_start();
 $id  = $_SESSION["user_info"]["id"];
+
 // var_dump($_SESSION);
 // $nom = 
 ?>

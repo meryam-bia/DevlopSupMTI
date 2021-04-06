@@ -38,8 +38,11 @@
             $prenom = test_input($_POST["prenom"]);
             $emai = test_input($_POST["email"]);
             $pssword = test_input($_POST["password"]);
+
+            $pss = password_hash($pssword, PASSWORD_DEFAULT);
+            
             include "/wamp64/www/DevlopSupMTI/method/adduser.php";
-            $addnewuser = new addnewuser($nom, $prenom, $emai, $pssword);
+            $addnewuser = new addnewuser($nom, $prenom, $emai, $pss);
             echo '<meta http-equiv="refresh" content="0">';
         }
     }
